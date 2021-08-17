@@ -2,10 +2,21 @@
 //
 
 #include <iostream>
+#include "QuickSort.h"
+#include "Util.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int array[] = { 10, 11, 2, 100, 101, 30, 1234 };
+    int sizeOfArray = sizeof(array) / sizeof(array[0]);
+
+
+    printIntArray(array, sizeOfArray);
+
+    quickSort(array, 0, sizeOfArray-1);
+
+    printIntArray(array, sizeOfArray);
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
