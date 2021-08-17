@@ -20,7 +20,7 @@ int main()
     int callDepth = 0;
     int findIndex = binarySearch(array, 0, sizeOfArray - 1, 1234, &callDepth);
 
-    std::cout << findIndex << "," << callDeeps << "\n";
+    std::cout << findIndex << "," << callDepth << "\n";
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
