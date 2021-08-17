@@ -4,6 +4,7 @@
 #include <iostream>
 #include "QuickSort.h"
 #include "Util.h"
+#include "BinarySearch.h"
 
 int main()
 {
@@ -16,6 +17,10 @@ int main()
     quickSort(array, 0, sizeOfArray-1);
 
     printIntArray(array, sizeOfArray);
+
+    int findIndex = binarySearch(array, 0, sizeOfArray - 1, 1234);
+
+    std::cout << findIndex << "\n";
 
 }
 
